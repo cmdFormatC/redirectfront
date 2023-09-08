@@ -4,6 +4,10 @@
 
 .App {
   font-family: 'Inter', 'Arial', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 .authentication {
   width: 100vw;
@@ -54,13 +58,146 @@
 .link__edit-button {
   padding: 0;
   border: 0;
-  border-radius: 0;
-  background-color: #0000;
-  height: 10px;
+  border-radius: 4px;
+  background-color: #2f80ed;
+  height: 25px;
   cursor: pointer;
-  background-image: url('../../../images/EditButton.svg');
-  width: 10px;
+  background-image: url('./images/EditButton.svg');
+  width: 25px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 15px 15px;
+  background-position: center;
   align-self: center;
+  margin: 0 0 0 10px;
+}
+.dashboard {
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  justify-content: center;
+  border: 1px solid #2f80ed;
+  border-radius: 30px;
+}
+
+.link {
+  display: flex;
+  width: 600px;
+  margin: 0 0 25px 0;
+  align-items: center;
+}
+.link__text {
+  color: #222222;
+  margin: 0 auto 0 0;
+  max-width: 375px;
+  word-wrap: break-word;
+}
+.link__id {
+  color: #222222;
+  margin: 0 5px 0 0;
+  min-width: 30px;
+  text-align: center;
+}
+
+.link__confirm-button {
+  padding: 0;
+  border: 0;
+  border-radius: 4px;
+  background-color: #2f80ed;
+  height: 25px;
+  cursor: pointer;
+  background-image: url('./images/ConfimButton.svg');
+  width: 25px;
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-position: center;
+  align-self: center;
+  margin: 0 0 0 10px;
+}
+
+.link__input {
+  width: 400px;
+  background-color: #0000;
+  border: none;
+  color: #222222;
+  margin: 0 auto 0 0;
+  padding: 0;
+  border-bottom: 1px solid #2f80ed;
+}
+
+
+.link__input:focus {
+  padding: 0;
+  background-color: #0000;
+  border: none;
+  outline: none;
+}
+
+.dashboard__header {
+  margin: 0 0 50px 0;
+  font-weight: 400;
+  line-height: 1.15;
+  font-size: 30px;
+}
+
+.dashboard__add-button {
+  border-radius: 4px;
+  background-color: #2f80ed;
+  padding: 5px 100px 7.5px 100px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 30px;
+  font-weight: 400;
+  margin: 50px 0 0 0;
+}
+
+.link__copy-button {
+  padding: 0;
+  border: 0;
+  border-radius: 4px;
+  background-color: #2f80ed;
+  height: 25px;
+  cursor: pointer;
+  background-image: url('./images/copy.svg');
+  width: 25px;
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-position: center;
+  align-self: center;
+}
+.link__cancel-button {
+  padding: 0;
+  border: 0;
+  border-radius: 4px;
+  background-color: #2f80ed;
+  height: 25px;
+  cursor: pointer;
+  background-image: url('./images/cancel.svg');
+  width: 25px;
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-position: center;
+  align-self: center;
+}
+
+.dashboard__add-button_disabled {
+  opacity: 0.5;
+}
+
+.link__delete-button {
+  padding: 0;
+  border: 0;
+  border-radius: 4px;
+  background-color: #2f80ed;
+  height: 25px;
+  cursor: pointer;
+  background-image: url('./images/delete.svg');
+  width: 25px;
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-position: center;
+  align-self: center;
+  margin: 0 0 0 10px;
 }
